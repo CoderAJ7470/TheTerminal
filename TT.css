@@ -1,0 +1,286 @@
+/* -------------------------------------------------------------
+Project: Turbofan's Terminal - a website for my YSFS addons and screenshots
+File name: TT.css
+Last change: July 17, 2018
+Author: AJ
+
+Color codes:
+	header - color and background-color: #FFF
+	header a, ul - background-color: #FFF; background-color: #1E90FF
+	body - background-color: #FFF; color: #000
+	download image buttons on YSFS Addons page: #2391FF (23 145 255)
+
+Images:
+	website banner image - background: url("images/header_image.PNG") no-repeat
+	TF-SKARP collage on YSFS Addonsp page - images/KA_Collage.PNG
+	TF-SKARP2 collage on YSFS Addonsp page - images/KA_Collage_2.PNG
+	Images for image slideshow on YSFS Addons page - images/map1.png/PNG... map5.png/PNG
+	Thumbnail images for image galleries on YSFS Screenshots page: images/img1_thumb.png...
+		img12_thumb.png
+	Full-size images for image galleries on YSFS Screenshots page: images/img1_large.PNG...
+		img12_large.PNG
+
+Borders:
+	header a - border: 1px solid #1E90FF
+			   border-radius: 10px
+
+Typography:
+	h1 - font-size: 40px
+	header li - text-align: left; font-weight: bold
+	body - font-family: Arial, Helvetica, sans-serif
+	content figure - font-style: italic; font-size: 12px (on the YSFS Screenshots page)
+	discliamer - font-style: italic (on the YSFS Screenshots page)
+	videoNote - font-style: italic (on the YSFS Videos page)
+	"Download" buttons font on YSFS Addons page - Lexia Bold (from bannerfans.com)
+
+/*--------------------- Header and Navigation - All Pages ---------------------*/
+
+h1 { font-size: 40px;
+	 margin-top: 0px;
+	 margin-bottom: 0px;
+	 height: 301px; }
+
+#header { color: #FFF;
+		  background: url("images/header_image_3.PNG") no-repeat;
+		  border: 5px solid #0000CD; }
+		  
+.navListDiv { background-color: #0000CD;
+		   height: 40px; }
+		  
+.navListDiv ul { padding-left: 0px;
+			  padding-top: 10px;
+			  margin-bottom: 0px;
+			  margin-top: 0px; }
+			 
+.navListDiv li { text-align: left;
+			 display: inline;
+			 font-weight: bold;
+			 padding-right: 5px; }
+			 
+.navListDiv a { text-decoration: none;
+		    color: #FFF;
+		    margin-top: 10px;
+		    margin-left: 5px;
+		    padding: 5px;}
+		    
+.navListDiv a.current { border: 2px solid #FFF;
+					 border-radius: 10px; }
+
+/*------------------------- Content Areas - All Pages -------------------------*/
+
+body { font-family: Arial, Helvetica, sans-serif;
+	   color: #000;
+	   margin-top: 0px; }
+	   
+.container { width: 960px;
+			 max-width: 80%;
+	   	   	 margin-left: auto;
+	   	   	 margin-right: auto;
+	   	   	 padding-top: 7px;
+	   	   	 padding-left: 5px;
+	   	   	 padding-right: 5px;
+	   	   	 padding-bottom: 5px;
+	   	   	 color: #000;
+	   	   	 background-color: #FFF; }
+	   	   	 
+.content a { color: #3264FF; }
+
+#videoNote { font-style: italic; }
+
+.headingsLevel1 { margin-top: 20px;
+				  margin-bottom: 20px;
+				  height: 40px;
+				  font-size: 35px; }
+
+.headingsLevel2 { margin-top: 60px; }
+
+.headingsLevel3 { margin-top: 60px; }
+
+.smallMessage { font-size: small;
+				color: #000; }
+
+.bold { font-weight: bold; }
+
+/*-------------------------- Index Page -------------------------*/
+
+#introduction { display: none; }
+
+#messageDirect { text-decoration: none;
+				 font-style: italic;
+				 font-size: 17px;
+				 font-weight: bold; }
+
+#gridDiv { text-align: center;
+		   margin-top: 70px; }
+
+#smallDescription { font-size: 10px; }
+
+#launchModalLink a { text-decoration: none;
+				   color: #000; }
+
+#mask { top: 0px;
+		left: 0px;
+		position: fixed;
+		width: 100%;
+	    height: 100%;
+		z-index: 1;
+		display: none; }
+	    
+#legendModal { z-index: 2;
+			   position: absolute;
+			   border: 1px solid #FFF;
+			   border-radius: 10px;
+			   opacity: 1.0;
+	    	   transform: translate(-50%, -50%);
+			   top: 50%;
+			   left: 50%;
+			   color: #FFF;
+			   background-color: #222; }
+			   
+#legendHeader {text-align: center;
+			   margin-top: 10px; }
+
+span { font-family: "MS Gothic", monospace;
+	   font-size: 15px;
+	   font-weight: bold;
+	   text-transform: uppercase; }
+
+.leftGreenLight, .rightGreenLight { visibility: hidden; }
+
+.leftGreenLight { margin-right: 15px; }
+
+.columnOne { width: 15%; }
+
+.columnTwo { width: 40%; }
+
+.columnThree { width: 15%; }
+
+.columnFour { width: 10%; }
+
+table { width: 80%;
+		border: 3px solid #888;
+		border-collapse: separate;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 6px;
+    	background-color: #222;
+    	color: #FFF;
+    	text-transform: uppercase;
+    	font-family: "MS Gothic", monospace; }
+    	
+th { font-size: 25px;
+	 padding-top: 5px;
+	 padding-bottom: 5px; }
+		
+th, td { border: 1px solid #777;
+		 border-collapse: collapse; }
+		 
+td { font-weight: bold;
+	 padding: 5px;  }
+		 
+td:nth-child(1) { padding: 7px 2px 4px 2px; }
+		
+
+/*------------------------- Addons Page -------------------------*/
+
+figure img { border: 5px solid #0000CD; }
+
+#content figure { font-style: italic;
+				  font-size: 12px;
+				  margin-left: 0px;
+				  margin-bottom: 0px;
+				  padding-right: 100px;
+				  padding-bottom: 0px; }
+
+#slideShowNote { text-align: center;
+				 font-style: italic;
+				 font-size: 12px; }
+
+#mapSlides1, #mapSlides2 { margin: auto;
+		  				   border: 5px solid #0000CD; }
+			  
+.slideButtons { text-align: center;
+				padding: 10px; }
+				
+.slideButtons a { margin-right: 15px;
+				  padding: 5px;
+				  text-decoration: none; }
+
+#disclaimerAsterisk a { text-decoration: none;
+						color: #F00; }
+
+#disclaimer { color: #F00;
+			  margin-top: 50px; }
+
+.addonsDownloadLinks { text-decoration: none;
+				  	   padding: 5px;
+				  	   border: 3px solid #0000CD;
+				  	   border-radius: 10px; }
+
+.downloadLinksParagraphs { margin-top: 25px; }
+
+#aircraftSectionHeading { margin-top: 60px; }
+
+#tfskarpHeading { margin-top: 25px; }
+
+/*------------------------- Map Information Page -------------------------*/
+
+.mapInfoImages { text-align: center; }
+
+.modificationPolicyPara { margin-top: 40px; }
+
+/*------------------------- Works in Progress Page -------------------------*/
+
+#colourCode { margin-top: 40px; }
+
+#toDoList li, #colourCode li { list-style-type: square;
+							   line-height: 25px; }
+
+.notStarted { color: #D70000; }
+
+.inProgress { color: #FF8C00; }
+
+.completed { color: green; }
+
+.cancelled { text-decoration: line-through; }
+
+/*------------------------- Links Page -------------------------*/
+
+.externalLinks {
+	margin-bottom: 50px;
+}
+
+.externalLinks li {
+	margin-bottom: 30px;
+}
+
+/*---------------------------- Footer -----------------------------*/
+#footer { text-align: center;
+		  font-size: .80em;
+		  font-style: italic;
+		  line-height: 20px;
+		  margin-top: 18px; }
+		  
+#footer a { color: #3264FF;
+			text-decoration: none; }
+
+#footer a.current { color: #FFF;
+					background-color: #0000CD;
+					padding: 5px;
+					border-radius: 5px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

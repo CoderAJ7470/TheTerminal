@@ -1,0 +1,28 @@
+This contains old code used for Turbofan's Terminal website.
+
+The following CSS code was used on the now-deleted YSFS Screenshots page
+/*------------------------- Screenshots Page -------------------------*/
+
+.galleries { padding-left: 16px; }
+
+.galleries a { text-decoration: none; }
+
+.galleries li { display: inline-block;
+				padding-right: 10px;
+				padding-bottom: 10px; }
+
+.galleries span { display: none; }
+
+.galleries ul { list-style-type: none; }
+
+.secondRow { padding-left: 214px; }
+
+-----------------------------------------------------------------------------
+
+This JS code was used for the footer
+
+document.write("<a href='ysfsAddons.html'>YSFS Addons</a> &nbsp;");
+	document.write("<a href='mapInformation.html'>Map Information</a> &nbsp;");
+	document.write("<a href='wip.html'>Works in Progress</a> &nbsp;");
+	document.write("<a href='links.html'>Links</a> &nbsp;");
+	document.write("<a href='about.html'>About the Author</a>");

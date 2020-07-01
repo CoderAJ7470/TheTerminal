@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Head section -->
+<head>
+	<title>Turbofan's Terminal : Fun Stuff</title>
+   	<meta charset="utf-8">
+   	<meta name="author" content="AJ">
+   	<meta name="description" content="This is the home page of the website">
+   	<meta name="keywords" content="home index YS Flight Simulator aviation airplane">
+   	
+   	<!-- This links to Google CDN jQuery library with a secure connection -->
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   	
+   	<!-- This links to the external JavaScript file -->
+   	<script type="text/javascript" src="TT.js">
+   	</script>
+   	
+   	<!-- This links to the external CSS file -->
+   	<link rel="stylesheet" href="TT.css" type="text/css" media="screen">
+</head>
+
+<!-- Body section -->
+<body>
+	<div id="container">
+		<div id="header"> <!-- div for header -->
+			<script type="text/javascript">displayHeader();</script>
+		</div>
+		
+		<div id="content"> <!-- div for content section -->
+			<hr >
+			
+			<h2>
+				Aviation Quiz
+			</h2>
+			<p>
+				An aviation quiz I created with some questions anyone can attempt at answering.
+				How difficult it is depends on how much you know. Of course, you can "Google" the
+				answers, but keep in mind one thing - you have only two minutes to complete the quiz!
+				<br ><br >
+				So do you think you can do well? Try it!
+			</p>
+			
+			<button type="button" onclick="startTimer();">Start the quiz!</button>
+			<br ><br >
+			<form>
+				<i>You have <input type="text" name="timer" id="timer" value="160"> seconds left
+				in this quiz.</i>
+			</form>
+			
+			<div id="quizQuestions">
+				<p>
+					Queston 1: Who successfully flew an airplane for the first time in history?
+					<br >
+					<input type="radio" name="question1" value="choice1">The Write Brothers
+					<br >
+					<input type="radio" name="question1" value="choice2">The First Airplane Guys
+					<br >
+					<input type="radio" name="question1" value="choice3">The Wright Brothers
+					<br >
+					<input type="radio" name="question1" value="choice4">The Parker Brothers
+				</p>
+				<p>
+					Queston 2: What is considered the world's first passenger "jumbo" jet?
+					<br >
+					<input type="radio" name="question2" value="choice1">The Jumbo Uno
+					<br >
+					<input type="radio" name="question2" value="choice2">The Super Guppy
+					<br >
+					<input type="radio" name="question2" value="choice3">The C-5A Galaxy
+					<br >
+					<input type="radio" name="question2" value="choice4">The Boeing 747
+				</p>
+				<p>
+					Queston 3: In aviation, what does the acronym "RVR" stand for?
+					<br >
+					<input type="radio" name="question3" value="choice1">Radar Vectors Range
+					<br >
+					<input type="radio" name="question3" value="choice2">Rejected Vectors Ritual
+					<br >
+					<input type="radio" name="question3" value="choice3">Runway Visual Range
+					<br >
+					<input type="radio" name="question3" value="choice4">Run Victor Run!
+				</p>
+				<p>
+					Queston 4: True or false: Landing aircraft always have the right-of-way.
+					<br >
+					<input type="radio" name="question4" value="choice1">True
+					<br >
+					<input type="radio" name="question4" value="choice2">False
+				</p>
+				<p>
+					Queston 5: You have just cleared security and are on your way to the gate. What
+					is this area past the security checkpoint called?
+					<br >
+					<input type="radio" name="question5" value="choice1">"Airside" or "sterile area"
+					<br >
+					<input type="radio" name="question5" value="choice2">La-la-land
+					<br >
+					<input type="radio" name="question5" value="choice3">The Airzone
+					<br >
+					<input type="radio" name="question5" value="choice4">A complicated mess
+				</p>
+				<p>
+					Queston 6: Will Rogers and Wiley Post are from which state?
+					<br >
+					<input type="radio" name="question6" value="choice1">Alaska
+					<br >
+					<input type="radio" name="question6" value="choice2">Oklahoma
+					<br >
+					<input type="radio" name="question6" value="choice3">Tennessee
+					<br >
+					<input type="radio" name="question6" value="choice4">California
+				</p>
+				<p>
+					Queston 7: Approximately how many parts does a Boeing 747 have (including
+					nuts, bolts and fasteners)?
+					<br >
+					<input type="radio" name="question7" value="choice1">2 million
+					<br >
+					<input type="radio" name="question7" value="choice2">Two thousand
+					<br >
+					<input type="radio" name="question7" value="choice3">6 million
+					<br >
+					<input type="radio" name="question7" value="choice4">Ten Thousand
+				</p>
+				<p>
+					Question 8: What does the symbol "Vr" mean in aviation?
+					<br >
+					<input type="radio" name="question8" value="choice1">Victor Romeo
+					<br >
+					<input type="radio" name="question8" value="choice2">The speed at which the pilot pulls the nose up
+					<br >
+					<input type="radio" name="question8" value="choice3">Very risky
+					<br >
+					<input type="radio" name="question8" value="choice4">Vertically rotated
+				</p>
+				<p>
+					Queston 9: In a runway touchdown zone, the thickest set of white bars is
+					known as the:
+					<br >
+					<input type="radio" name="question9" value="choice1">point beyond which you cannot land
+					<br >
+					<input type="radio" name="question9" value="choice2">Aiming point
+					<br >
+					<input type="radio" name="question9" value="choice3">Thick point
+					<br >
+					<input type="radio" name="question9" value="choice4">Piano keys
+				</p>
+				<p>
+					Queston 10: When an air traffic controller talks about a "20-knot gain
+					over 5 miles", what is that in reference to?
+					<br >
+					<input type="radio" name="question10" value="choice1">How quickly the controller
+					can accelerate while running in 5 miles
+					<br >
+					<input type="radio" name="question10" value="choice2">A windshear alert
+					<br >
+					<input type="radio" name="question10" value="choice3">How much windspeed the
+					previous aircraft added to the air behind it
+					<br >
+					<input type="radio" name="question10" value="choice4">How much windpseed birds
+					are adding by flying around an airport.
+				</p>
+			</div>
+			
+			<hr >
+		</div> <!-- End of content div -->
+		
+		<div id="footer">
+			<script type="text/javascript">displayFooter();</script>
+		</div>
+	</div> <!-- End of container div -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

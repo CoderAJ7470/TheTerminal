@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Head section -->
+<head>
+	<title>Turbofan's Terminal | Home Page</title>
+   	<meta charset="utf-8">
+   	<meta name="author" content="AJ">
+   	<meta name="description" content="This website showcases my addons for the YS Flight Simulator">
+   	<meta name="keywords" content="home index YS Flight Simulator aviation airplane">
+   
+    <!-- This links to Google CDN jQuery library with a secure connection -->
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+   	<!-- This links to the external JavaScript file -->
+   	<script type="text/javascript" src="TT.js"></script>
+   	
+   	<!-- This links to the external CSS file -->
+   	<link rel="stylesheet" href="TT.css" media="screen">
+   	
+</head>
+
+<!-- Body section -->
+<body>
+	<div class="container">
+		<div id="header" href="top">
+			<h1>Turbofan's Terminal</h1>
+		</div> <!-- End of header div -->
+		
+		<div id="navList" class="navListDiv">
+			<ul>
+				<li><a href='index.html' class="current">Home</a></li>
+				<li><a href='ysfsAddons.html'>YSFS Addons</a></li>
+				<li><a href='mapInformation.html'>Map Information</a></li>
+				<li><a href='wip.html'>Works in Progress</a></li>
+				<li><a href="tools.html">Tools For YS Flight</a></li>
+				<li><a href='links.html'>Links</a></li>
+				<li><a href='about.html'>About the Author</a></li>
+			</ul>
+		</div>
+		
+		<div class="content">
+			<h1 class="headingsLevel1">
+				Welcome to the Terminal!
+			</h1>
+			<a id="messageDirect" href="#messageHeader">First time visitor? Click here for a brief message!</a>
+			
+			<div id="gridDiv">
+				<h2><i>General Release and Information Display (GRID) for 2019</i></h2>
+				
+				<p>
+					The GRID below is an overview of map projects and other items that are in the planning phase, being worked on
+					or have been released. This includes the following products: this website, Air Traffic
+					Replay Projects (ATRPs), videos, major map updates/new maps in the works and my map
+					<a href="https://forum.ysfhq.com/viewtopic.php?f=147&t=8615">toolbox</a>. Check back at your convenience for
+					updates to the GRID!
+				</p>
+				
+				<table id="gridTable">
+					<col class="columnOne">
+					<col class="columnTwo">
+					<col class="columnThree">
+					<col class="columnFour">
+					<tr>
+						<th>Product</th><th>Information</th><th>Completion Date</th><th>Status</th>
+					</tr>
+					<tr>
+						<td><img class="gridThumbnails" src="icons/website.png" width="100" height="50" alt="video icon"></td>
+						<td>Website Overhaul | New colours, fully responsive, additional content | CSS Grid and Sass</td>
+						<td>Delayed</td>
+						<td>In Progress</td>
+					</tr>
+					<tr>
+						<td><img class="gridThumbnails" src="icons/map.png" width="100" height="50" alt="video icon"></td>
+						<td>New Map | Fictional island located north of New Zealand | Details coming later this year</td>
+						<td>TBD</td>
+						<td>Scheduled</td>
+					</tr>
+					<tr>
+						<td><img class="gridThumbnails" src="icons/website.png" width="100" height="50" alt="website icon"></td>
+						<td>Website Update | Map information for Cul-de-Sac PAC and Atlantica</td>
+						<td>TBD</td>
+						<td>Scheduled</td>
+					</tr>
+					<tr>
+						<td><img class="gridThumbnails" src="icons/toolbox.png" width="100" height="50" alt="toolbox icon"></td>
+						<td>Toolbox update | Additional runways for future map</td>
+						<td>TBD</td>
+						<td>Scheduled</td>
+					</tr>
+				</table>			
+			</div> <!-- End of gridDiv -->
+			
+			<br>
+			<div id="launchModalLink"><a href="#" id="modalLink"><i>Click here to see a legend for the GRID above.
+				&nbsp; Click anywhere to close the legend.</i></a></div>
+			
+			<!-- Modal window that shows a "legend" for the GRID above; shows details of what each column contains -->
+			<div id="mask">
+				<div id="legendModal">
+					<div id="legendHeader">How the GRID works - a short explanation of each column and acronyms used</div>
+					<div id="legendBody">
+						<ul>
+							<li><span>Product</span> = Shows a small icon of a product (see below for long-forms of acronyms)</li>
+							<li><span>Information</span> = For maps: what is being done to the product | What is changing/being updated<br>
+								~~ For videos: Type of video | Which airport/map | Which observation point the video will be "recorded"
+								from<br>
+								~~ For all other items, this section will be self-explanatory</li>
+							<li><span>Completion date</span> = estimated date of completion/arrival date. If no date is set, this column will show
+								"TBD" (To Be Determined)</li>
+							<li><span>Status</span> = This will show four distinct statuses: scheduled, in-progress, delayed and for products
+								that have "arrived" at the terminal, or have been released, two alternate-flashing green lights: 
+								<img src="icons/circle.png" height="20" width="20" alt="green circle icon"></li>
+						</ul>
+						<ul>
+							<li>ATRP = Air Traffic Replay Project</li>
+							<li>T-SiPs = Turbofan Silent Productions</li>
+							<li>MaPS = Measurements and Preparation Standards for YSFS maps (document)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<h3 id="messageHeader" class="headingsLevel3">Brief message for first-time visitors (click to show/hide message)</h3>
+			
+			<p id="introduction">
+				Hi! This is 
+				<a href="https://forum.ysfhq.com/memberlist.php?mode=viewprofile&u=66" target="_blank">Turbofan</a> from
+				<a href="https://ysfhq.com" target="_blank">YS Flight Headquarters</a>. If civilian and commercial flight
+				simming is your	flight of fancy, you're at the right place! I specialize in creating addon maps for the
+				<a href="http://ysflight.in.coocan.jp/ysflight/ysflight/e.html" target="_blank">YS Flight Simulator</a>.
+				<br><br>
+				I invite you to take a look around the website, including my YSFS Addon page, where you will find all of
+				my maps. Included are two sliding image galleries so you can preview the maps. I'm not known for aircraft
+				addons or repaints (there are amazing aircraft addon creators/modders). However, I have two repaint packs of
+				<a href="http://www.ysflight.ca" target="_blank">Taskforce 58's</a> Beechcraft Super King Air 200 to my name.
+				You can find them on the addons page as well.
+				<br><br>
+				As you've likely noticed already, the GRID will show what updates/projects I have planned, am in the process
+				of working on, or have completed and released. You can come here and check it out at your convenience. I also
+				encourage you to check out YS Flight Headquarters (a ton of information there!) and my links page for some of
+				the best addons out there for YS Flight!
+				<br><br>
+				Happy Flying! 
+			</p>
+			
+			<p><a href="#top">Back to top</a></p>
+			
+			<hr>
+		</div> <!-- End of content div -->
+		
+		<div id="footer">
+			<a href="index.html" class="current">Home</a> &nbsp; <a href="ysfsAddons.html">YSFS Addons</a> &nbsp;
+			<a href="mapInformation.html">Map Information</a> &nbsp; <a href="wip.html">Works in Progress</a> &nbsp;
+			<a href="tools.html">Tools for YS Flight</a> &nbsp; <a href="links.html">Links</a> &nbsp;
+			<a href="about.html">About the Author</a>
+			
+			<p>
+				Disclaimer: This is not an official website for the YS Flight Simulator; please do not contact the author of the game
+				to ask questions about addons. Rather, please visit 
+					<a href="http://forum.ysfhq.com/viewtopic.php?f=234&amp;t=6256" target="_blank">this page</a> for more information.
+				Any opinions stated are only the opinions of this website's author and should not be taken as factual arguments.
+			</p>
+			
+			<p>
+				Website banner: aircraft at the gates at Linbury City International Airport on Winnsworth Island (fictional).
+				<br ><br >
+				Banner credits - original aircraft by CHF, Taskforce58 and decaff42. Repaints of these aircraft by skatjr as
+				well as the respective aircraft's creators.
+				<br ><br >
+				Map ground objects by KZS, HotelFox, PatrickN, Taskforce 58 and Airbourne.
+			</p>
+			
+			<script type="text/javascript">getLastModified();</script>
+		</div> <!-- End of footer div -->
+	</div> <!-- End of container div -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
