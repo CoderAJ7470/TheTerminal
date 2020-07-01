@@ -183,6 +183,10 @@ td:nth-child(1) { padding: 7px 2px 4px 2px; }
 
 /*------------------------- Addons Page -------------------------*/
 
+figure {
+	margin: 0;
+}
+
 figure img { border: 5px solid #0000CD; }
 
 #content figure { font-style: italic;
