@@ -187,6 +187,10 @@ figure {
 	margin: 0;
 }
 
+figure figcaption {
+	font-style: italic;
+}
+
 figure img { border: 5px solid #0000CD; }
 
 #content figure { font-style: italic;
