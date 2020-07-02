@@ -239,9 +239,9 @@ figure img { border: 5px solid #0000CD; }
 
 /*------------------------- Works in Progress Page -------------------------*/
 
-#colourCode { margin-top: 40px; }
+.colourCode { margin-top: 40px; }
 
-#toDoList li, #colourCode li { list-style-type: square;
+.toDoList li, .colourCode li { list-style-type: square;
 							   line-height: 25px; }
 
 .notStarted { color: #D70000; }
