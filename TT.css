@@ -183,6 +183,24 @@ td:nth-child(1) { padding: 7px 2px 4px 2px; }
 
 /*------------------------- Addons Page -------------------------*/
 
+.coloredText {
+	display: inline-block;
+	font-style: italic;
+	font-size: 24px;
+}
+
+.purple {
+	color: #640064;
+}
+
+.orange {
+	color: #FF8040;
+}
+
+.grey {
+	color: #a0a0a0;
+}
+
 figure {
 	margin: 0;
 }
