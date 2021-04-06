@@ -20,11 +20,11 @@ function getLastModified()
 let nodesLeft = document.getElementsByClassName("leftGreenLight");
 let nodesRight = document.getElementsByClassName("rightGreenLight");
 
-let lightOn = false;
+let lightOn = true;
 
 function showStatusLights()
 {
-	setInterval(startGreenFlashingLights, 1000);
+	setInterval(startGreenFlashingLights, 1200);
 }
 
 function startGreenFlashingLights()
